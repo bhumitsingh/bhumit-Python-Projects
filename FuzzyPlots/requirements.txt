@@ -1,0 +1,9 @@
+numpy
+scikit-fuzzy
+scikit-learn
+scikit
+scikit-control
+flask
+streamlit
+requests
+matplotlib
