@@ -15,14 +15,10 @@ password TEXT NOT NULL
 connection.commit()
 
 example_data = [
-    ("Bhumit Singh", "bhumitsingh123", "chiragsingh360@gmail.com", "password123"),
+    ("Bhumit Singh", "bhumitsingh123", "chiragsingh360@gmail.com", "password123")
 ]
 
 cursor.executemany(
     "INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?)",example_data
 )
 connection.commit()
-
-cursor.execute('Select * from users')
-result = cursor.fetchall()
-print(result)
